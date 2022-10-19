@@ -14,6 +14,7 @@ const pegarValor = (elemento) => {
     if (verificandoResult) {  // Verficando se é o primeiro valor ou o segundo para que seja exposto na tela;
         result.innerHTML = ""; // Caso seja o segundo valor, a tela é limpa para que entre apenas números do segundo valor; 
         verificandoResult = false;
+        verificandoIgual = true;
     }
     if (elemento.target.innerText == ".") { // Verificando se ja foi adicionado algum ponto, para impedir repetição;
         for (let i = 0; i < result.innerText.length; i++) {
@@ -22,7 +23,7 @@ const pegarValor = (elemento) => {
 
     }
 
-    verificandoIgual = true; // Possibilitando que o botão igual seja usado;  
+    // verificandoIgual = true; // Possibilitando que o botão igual seja usado;  
     result.innerHTML += elemento.target.innerText; // Adicionando números na tela;
 
 
