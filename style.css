@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+    background: linear-gradient(120deg, #002e34, #00755c);
+    color: white;
+}
+
+#container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(90deg, #00c16c, 20%, #004443);
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.377);
+    border-radius: 5px;
+}
+
+.boxtext {
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calc {
+    font-size: 25px;
+    color: gray;
+}
+
+.result {
+    font-size: 35px;
+}
+
+#algorismos {
+    display: grid;
+    grid-gap: 5px;
+    grid-template: auto auto auto auto auto / auto auto auto auto;
+    padding: 10px;
+
+}
+
+button {
+    padding: 30px;
+    background-color: #00c16c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.igual,
+.clean,
+.delete,
+.sinal {
+
+    background-color: #90ff17;
+}
+
+
+button:hover {
+    background-color: #00755c;
+}
+
+.igual {
+    grid-row: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.num {
+    color: #fff
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer div {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer i {
+    border-radius: 50%;
+}
+
+footer i:hover {
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.377);
+    color: #004443;
+}
+
+a:visited {
+    color: #fff;
+}
