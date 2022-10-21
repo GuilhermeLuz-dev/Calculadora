@@ -10,6 +10,8 @@ body {
     height: 100vh;
     font-size: 30px;
     background: linear-gradient(120deg, #002e34, #00755c);
+
+
     color: white;
 }
 
@@ -121,6 +123,46 @@ footer i:hover {
     color: #004443;
 }
 
-a{
+a {
     color: #fff;
+}
+
+@media screen and (max-width:500px) {
+    #container {
+        top: 30%;
+    }
+
+    footer {
+        height: 30%;
+        background-color: #002e34;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    button {
+        padding: 10px;
+    }
+
+    #container {
+        top: 35%;
+    }
+}
+
+@media screen and (max-height:600px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #container {
+        top: 80%;
+    }
 }
